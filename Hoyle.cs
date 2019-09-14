@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-public class Hoyle
+public static class Hoyle : Deck
 {
-    protected int numOfCards { get; }
-    protected string suit { get; }
-    protected string cardValue { get; }
-    protected Hoyle(string suit, string cardValue)
+    public static string suit { get; }
+    public static string cardValue { get; }
+    public static Hoyle(){}
+    public static Hoyle(string suit, string cardValue)
     {
         this.suit = suit;
         this.cardValue = cardValue;
     }
 }
 
-public static class FullDeck
-{
-}
