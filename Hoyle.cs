@@ -54,7 +54,8 @@ public class Hoyle
 
     public override string ToString()
     {
-        return $"{this.cardValue} {this.suit}";
+        string formatCardValue = this.cardValue.ToString();
+        return $"{formatCardValue.PadLeft(2,' ')} {this.suit}";
     }
 }
 

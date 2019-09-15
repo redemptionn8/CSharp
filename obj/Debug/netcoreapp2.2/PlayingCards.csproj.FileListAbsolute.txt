@@ -8,3 +8,4 @@ D:\Documents\PlayingCards\PlayingCards\CSharp\bin\Debug\netcoreapp2.2\PlayingCar
 D:\Documents\PlayingCards\PlayingCards\CSharp\bin\Debug\netcoreapp2.2\PlayingCards.pdb
 D:\Documents\PlayingCards\PlayingCards\CSharp\obj\Debug\netcoreapp2.2\PlayingCards.dll
 D:\Documents\PlayingCards\PlayingCards\CSharp\obj\Debug\netcoreapp2.2\PlayingCards.pdb
+D:\Documents\PlayingCards\PlayingCards\CSharp\obj\Debug\netcoreapp2.2\PlayingCards.csprojAssemblyReference.cache
