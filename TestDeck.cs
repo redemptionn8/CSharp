@@ -4,60 +4,60 @@ class TestDeck
 {
     static void Main(string[] args)
     {
-        int numOfCards=52,numOfSuit=0,suit=0;
-        Hoyle[] FullDeck = new Hoyle[52];
+        int numOfCards=52, numOfSuit=1, suit=0;
+        Hoyle h = new Hoyle();
+        Hoyle[] FullDeck = new Hoyle[numOfCards];
         for(int i=0; i<numOfCards; i++)
         {
             switch(suit)
             {
                 case 0:
                 {
-                    FullDeck[i].suit="Hearts";
-                    FullDeck[i].cardValue=numOfSuit;
+                    h = new Hoyle(numOfSuit,"Hearts");
+                    FullDeck[i] = h;
                     numOfSuit++;
-                    if (i=12)
+                    if (i == 12)
                     {
                             suit++;
-                            numOfSuit=0;
+                            numOfSuit=1;
                     }
                     break;
                 }
                 case 1:
-                {
-                    FullDeck[i].suit="Diamonds";
-                    FullDeck[i].cardValue=numOfSuit;
-                    numOfSuit++;
-                    if (i=25)
+                    {
+                        h = new Hoyle(numOfSuit, "Diamonds");
+                        FullDeck[i] = h;
+                        numOfSuit++;
+                    if (i==25)
                     {
                             suit++;
-                            numOfSuit=0;
+                            numOfSuit=1;
                     }
                     break;
                 }
                 case 2:
-                {
-                    FullDeck[i].suit="Spades";
-                    FullDeck[i].cardValue=numOfSuit;
-                    numOfSuit++;
-                    if (i=38)
+                    {
+                        h = new Hoyle(numOfSuit, "Spades");
+                        FullDeck[i] = h;
+                        numOfSuit++;
+                    if (i==38)
                     {
                             suit++;
-                            numOfSuit=0;
+                            numOfSuit=1;
                     }
                     break;
                 }
                 case 3:
-                {
-                    FullDeck[i].suit="Clubs";
-                    FullDeck[i].cardValue=numOfSuit;
-                    numOfSuit++;
+                    {
+                        h = new Hoyle(numOfSuit, "Clubs");
+                        FullDeck[i] = h;
+                        numOfSuit++;
                     break;
                 }
-                default:
             }
         }
-        foreach (Hoyle card in FullDeck)
-            Console.WriteLine($"{Hoyle.cardValue}{Hoyle.suit}");
+        foreach (Hoyle Card in FullDeck)
+            Console.WriteLine($"{Card}");
 
     }
 }

@@ -1,0 +1,10 @@
+D:\Documents\PlayingCards\PlayingCards\CSharp\obj\Debug\netcoreapp2.2\PlayingCards.csproj.CoreCompileInputs.cache
+D:\Documents\PlayingCards\PlayingCards\CSharp\obj\Debug\netcoreapp2.2\PlayingCards.AssemblyInfoInputs.cache
+D:\Documents\PlayingCards\PlayingCards\CSharp\obj\Debug\netcoreapp2.2\PlayingCards.AssemblyInfo.cs
+D:\Documents\PlayingCards\PlayingCards\CSharp\bin\Debug\netcoreapp2.2\PlayingCards.deps.json
+D:\Documents\PlayingCards\PlayingCards\CSharp\bin\Debug\netcoreapp2.2\PlayingCards.runtimeconfig.json
+D:\Documents\PlayingCards\PlayingCards\CSharp\bin\Debug\netcoreapp2.2\PlayingCards.runtimeconfig.dev.json
+D:\Documents\PlayingCards\PlayingCards\CSharp\bin\Debug\netcoreapp2.2\PlayingCards.dll
+D:\Documents\PlayingCards\PlayingCards\CSharp\bin\Debug\netcoreapp2.2\PlayingCards.pdb
+D:\Documents\PlayingCards\PlayingCards\CSharp\obj\Debug\netcoreapp2.2\PlayingCards.dll
+D:\Documents\PlayingCards\PlayingCards\CSharp\obj\Debug\netcoreapp2.2\PlayingCards.pdb
