@@ -13,7 +13,7 @@ class TestDeck
             {
                 case 0:
                 {
-                    h = new Hoyle(numOfSuit,"Hearts");
+                    h = new Hoyle(numOfSuit,'H');
                     FullDeck[i] = h;
                     numOfSuit++;
                     if (i == 12)
@@ -25,7 +25,7 @@ class TestDeck
                 }
                 case 1:
                     {
-                        h = new Hoyle(numOfSuit, "Diamonds");
+                        h = new Hoyle(numOfSuit, 'D');
                         FullDeck[i] = h;
                         numOfSuit++;
                     if (i==25)
@@ -37,7 +37,7 @@ class TestDeck
                 }
                 case 2:
                     {
-                        h = new Hoyle(numOfSuit, "Spades");
+                        h = new Hoyle(numOfSuit, 'S');
                         FullDeck[i] = h;
                         numOfSuit++;
                     if (i==38)
@@ -49,15 +49,22 @@ class TestDeck
                 }
                 case 3:
                     {
-                        h = new Hoyle(numOfSuit, "Clubs");
+                        h = new Hoyle(numOfSuit, 'C');
                         FullDeck[i] = h;
                         numOfSuit++;
                     break;
                 }
             }
         }
-        foreach (Hoyle Card in FullDeck)
-            Console.WriteLine($"{Card}");
+        Random C = new Random();
+        Hoyle A = FullDeck[C.Next(52)], B = FullDeck[C.Next(52)];
+        if (A.CompareValue(B.cardValue) == 1)
+            Console.WriteLine($"{A} is greater than {B}");
+
+        else if (A.CompareValue(B.cardValue) == -1)
+            Console.WriteLine($"{A} is less than {B}");
+        else
+            Console.WriteLine($"{A} is equal to {B}");
 
     }
 }

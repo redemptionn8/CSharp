@@ -4,10 +4,10 @@ using System.Text;
 
 public class Hoyle
 {
-    public string suit { get; set; }
+    public char suit { get; set; }
     public string cardValue { get; set; }
-    public Hoyle() { suit=""; cardValue=""; }
-    public Hoyle(int x, string y)
+    public Hoyle() { suit=' '; cardValue=""; }
+    public Hoyle(int x, char y)
     {
         getValue(x);
         getSuit(y);
@@ -47,7 +47,7 @@ public class Hoyle
         cardValue = value;
     }
 
-    public void getSuit(string x)
+    public void getSuit(char x)
     {
         suit = x;
     }
@@ -56,6 +56,73 @@ public class Hoyle
     {
         string formatCardValue = this.cardValue.ToString();
         return $"{formatCardValue.PadLeft(2,' ')} {this.suit}";
+    }
+
+    public int CompareValue(string x)
+    {
+        int intCardValue, intX;
+            switch (this.cardValue)
+            {
+                case "A":
+                    {
+                        intCardValue = 14;
+                    break;
+                    }
+                case "J":
+                    {
+                        intCardValue = 11;
+                    break;
+                }
+                case "Q":
+                    {
+                        intCardValue = 12;
+                    break;
+                }
+                case "K":
+                    {
+                        intCardValue = 13;
+                    break;
+                }
+                default:
+                    {
+                        intCardValue = Convert.ToInt32(this.cardValue);
+                    break;
+                    }
+            }
+        switch (x)
+        {
+            case "A":
+                {
+                    intX = 14;
+                    break;
+                }
+            case "J":
+                {
+                    intX = 11;
+                    break;
+                }
+            case "Q":
+                {
+                    intX = 12;
+                    break;
+                }
+            case "K":
+                {
+                    intX = 13;
+                    break;
+                }
+            default:
+                {
+                    intX = Convert.ToInt32(x);
+                    break;
+                }
+        }
+        if (intCardValue > intX)
+            return 1;
+        if (intCardValue < intX)
+            return -1;
+        else
+            return 0;
     }
 }
 
